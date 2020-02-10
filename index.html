@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ec26ff0a9c.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+  <nav class="navbar">
+    <div class="navbar-center">
+      <span class="nav-icon">
+        <i class="fas fa-bars"></i>
+      </span>
+      <img src="images/logo.svg" alt="store logo">
+      <div class="cart-btn">
+        <span class="nav-icon">
+          <i class="fas fa-cart-plus"></i>
+        </span>
+        <div class="cart-items">0</div>
+
+      </div>
+    </div>
+
+  </nav>
+
+  <header class="hero">
+    <div class="banner">
+      <h1 class="banner-title">Furniture Collection</h1>
+      <button type="button" class="banner-btn">Shop now</button>
+    </div>
+  </header>
+  <section class="products">
+    <div class="section-title">
+        <h2>Our Products</h2>
+    </div>
+    <div class="products-center">
+      <article class="product">
+        <div class="img-container">
+          <img src="images/product-1.jpeg" alt="product" class="product-img">
+          <button class="bag-btn" data-id="1">
+            <i class="fas fa-shopping-cart"></i>
+            add to bag
+          </button>
+        </div>
+        <h3>queen bed</h3>
+        <h4>$15</h4>
+      </article>
+    </div>
+  </section>
+
+   <div class="cart-overlay">
+     <div class="cart">
+       <span class="close-cart">
+         <i class="fas fa-window-close"></i>
+       </span>
+       <h2>Your Cart</h2>
+       <div class="cart-content">
+         <div class="cart-item">
+           <img src="images/product-1.jpeg" alt="product">
+           <div>
+             <h4>queen bed</h4>
+             <h5>$9.0</h5>
+             <span class="remove-item">remove item</span>
+           </div>
+           <div>
+             <i class="fas fa-chevron-up"></i>
+             <p class="item-amount">1</p>
+             <i class="fas fa-chevron-down"></i>
+           </div>
+         </div>
+
+       </div>
+       <div class="cart-footer">
+         <h3>your total: $ <span class="cart-total">0</span></h3>
+         <button type="button" class="clear-cart banner-btn">clear cart</button>
+       </div>
+     </div>
+   </div>
+
+
+
+
+
+  <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
